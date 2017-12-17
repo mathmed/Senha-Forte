@@ -15,16 +15,16 @@ export default class Cabecario extends Component{
 						<View style = {{height: 50,flexDirection: 'row', alignItems: 'center'}}>
 							<Text style = {{fontSize: 22, fontWeight: 'bold', color : '#BAFFA8' , fontFamily:'serif'}}> Senha forte </Text>
 							<TouchableHighlight underlayColor = 'transparent' onPress= {()=> Actions.informacoes()}>
-								<Text style = {{fontSize: 20, color : 'white', marginLeft:20, fontWeight: 'bold'}}>Informações</Text>
+								<Text style = {{fontSize: 20, color : 'white', marginLeft:20, fontWeight: 'bold'}}>Sobre</Text>
 							</TouchableHighlight>
 
-							<TouchableHighlight underlayColor = 'transparent' onPress= {()=> Actions.dicas()}>
-								<Text style = {{fontSize: 20, color : 'white', marginLeft:20, fontWeight: 'bold'}}>Dicas</Text>
+							<TouchableHighlight underlayColor = 'transparent' onPress= {()=> Actions.resultados()}>
+								<Text style = {{fontSize: 20, color : 'white', marginLeft:20, fontWeight: 'bold'}}>Estatísticas</Text>
 							</TouchableHighlight>
 						</View>
 					</View>
 
-					<TabBar {...this.props} style = {{backgroundColor:'#34495e', elevation: 0}} />
+					<TabBar {...this.props}  indicatorStyle={{ backgroundColor: 'white' }} pressColor = 'white' style = {{backgroundColor:'#34495e', elevation: 0}} />
 				</View>
 
 

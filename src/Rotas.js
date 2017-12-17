@@ -11,7 +11,7 @@ import {
 import {Scene, Router} from 'react-native-router-flux';
 import Principal from './components/Principal'
 import Informacoes from './components/Informacoes'
-import Dicas from './components/Dicas'
+import Resultados from './components/Resultados'
 import TabBarX from './components/TabBarX'
 
 export default class Rotas extends Component<{}> {
@@ -23,8 +23,8 @@ export default class Rotas extends Component<{}> {
           titleStyle= {{color: 'black', fontWeight: 'bold', fontSize: 20, alignItems: 'center'}} hideNavBar initial/>
 
 
-          <Scene key = 'informacoes' component = {Informacoes} title = 'Informações' navigationBarStyle = {{backgroundColor: 'transparent'}} titleStyle= {{color: 'black', fontWeight: 'bold', fontSize: 20, alignItems: 'center'}}/>
-          <Scene key = 'dicas' component = {Dicas} title = 'Dicas' navigationBarStyle = {{backgroundColor: 'transparent'}} titleStyle= {{color: 'black', fontWeight: 'bold', fontSize: 20, alignItems: 'center'}}/>
+          <Scene key = 'informacoes' component = {Informacoes} title = 'Sobre' navigationBarStyle = {{backgroundColor: '#34495e'}} titleStyle= {{color: 'snow', fontWeight: 'bold', fontSize: 20, alignItems: 'center'}}/>
+          <Scene key = 'resultados' component = {Resultados} title = 'Estatísticas' navigationBarStyle = {{backgroundColor: '#34495e'}} titleStyle= {{color: 'snow', fontWeight: 'bold', fontSize: 20, alignItems: 'center'}}/>
         </Scene>
       </Router>
     );

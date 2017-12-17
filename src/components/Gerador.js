@@ -75,12 +75,14 @@ class Gerador extends Component {
 					<View style= {{marginTop: 10, alignItems: 'center'}}>
 						<TouchableHighlight underlayColor = 'transparent' onPress= {() => this.props.gerarSenha(this.props.tamanhoSenha, this.props.checkMai, this.props.checkMin, this.props.checkSim, this.props.checkNum)}>
 							<View style = {styles.botao}>
-								<Text style = {styles.titulo}> Gerar! </Text>
+								<Text style = {styles.titulo}> Gerar </Text>
+								<Image source = {require("../imgs/certo2.png")} />
+
 							</View>
 						</TouchableHighlight>
 					</View>
 
-					<View style= {{height: 150, backgroundColor: 'white', margin:7, borderRadius:10, borderColor: 'black', borderWidth: 3, marginTop: 20 }}>
+					<View style= {{height: 150, backgroundColor: 'white', margin:7, borderRadius:10, borderColor: 'white', borderWidth: 3, marginTop: 10 }}>
 						<View style ={{alignItems: 'center'}}>
 							<Text style = {{fontSize:20, fontWeight: 'bold', color: 'black'}}> Senha gerada: </Text>
 							<Text style = {{fontSize:17, fontWeight: 'bold', color: '#16a085', marginTop: 30}}> {this.props.senhaGerada} </Text>
@@ -88,8 +90,11 @@ class Gerador extends Component {
 					</View>
 					<View style ={{backgroundColor: 'snow', alignItems: 'center', marginTop: 1}}>
 						<TouchableHighlight underlayColor = 'transparent' onPress = {() => this.copiarParaClip()}>
-							<Image source = { require('../imgs/eae.png')}>
-							</Image>
+							<View style = {{flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
+								<Image source = { require('../imgs/eae.png')} />
+								<Text style = {{fontSize: 20, fontWeight: 'bold', color: 'black'}}> Copiar </Text>
+							</View>
+				
 						</TouchableHighlight>
 					</View>
 
@@ -122,7 +127,8 @@ const styles = StyleSheet.create({
 		width: 250,
 		borderRadius:100,
 		borderColor: 'black',
-		borderWidth: 3 
+		borderWidth: 3,
+		flexDirection: 'row' 
 
 	}
 

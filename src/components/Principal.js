@@ -44,14 +44,16 @@ class Principal extends Component {
 					<View style= {{marginBottom: 10, alignItems: 'center'}}>
 						<TouchableHighlight underlayColor = 'transparent' onPress= {()=> this.props.calcularSegurancaSenha(this.props.senhaTeste)}>
 							<View style = {styles.botao}>
-								<Text style = {styles.titulo}> Testar! </Text>
+								<Text style = {styles.titulo}> Testar </Text>
+
+								<Image source = {require("../imgs/certo2.png")} />
 							</View>
 						</TouchableHighlight>
 					</View>
 
 
 
-				<View style= {{height: 250, backgroundColor: 'white', margin:7, borderRadius:10, borderColor: 'black', borderWidth: 3, marginBottom: 0 }}>
+				<View style= {{height: 250, backgroundColor: 'white', margin:7, borderRadius:10, borderColor: 'white', borderWidth: 3, marginBottom: 0 }}>
 					<ScrollView>
 						<View style = {{marginTop: 30}}>
   							<AnimatedBar
@@ -143,7 +145,8 @@ const styles = StyleSheet.create({
 		width: 250,
 		borderRadius:100,
 		borderColor: 'black',
-		borderWidth: 3 
+		borderWidth: 3,
+		flexDirection: 'row' 
 
 	}
 

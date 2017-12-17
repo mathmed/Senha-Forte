@@ -47,7 +47,7 @@ class Principal extends Component {
 					<View style= {{marginBottom: 10, alignItems: 'center'}}>
 						<TouchableHighlight underlayColor = 'transparent' onPress= {()=> this.props.criptografarSenha(this.props.senhaTeste)}>
 							<View style = {styles.botao}>
-								<Text style = {{fontSize:15, fontWeight: 'bold', color: 'snow'}}> Criptografar em MD5! </Text>
+								<Text style = {{fontSize:15, fontWeight: 'bold', color: 'snow'}}> Criptografar em MD5 </Text>
 							</View>
 						</TouchableHighlight>
 					</View>
@@ -62,8 +62,10 @@ class Principal extends Component {
 				</View>
 				<View style ={{backgroundColor: 'snow', alignItems: 'center', marginTop: 20}}>
 					<TouchableHighlight underlayColor = 'transparent' onPress = {() => this.copiarParaClip()}>
-						<Image source = { require('../imgs/eae.png')}>
-						</Image>
+						<View style = {{flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
+							<Image source = { require('../imgs/eae.png')} />
+							<Text style = {{fontSize: 20, fontWeight: 'bold', color: 'black'}}> Copiar </Text>
+						</View>
 					</TouchableHighlight>
 				</View>
 		</View>

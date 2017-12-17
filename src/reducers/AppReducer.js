@@ -18,6 +18,7 @@ const INITIAL_STATE = {
 	checkMin: false,
 	checkSim: false,
 	checkNum: false
+	
 };
 
 
@@ -34,12 +35,15 @@ export default (state = INITIAL_STATE,action) => {
 				 bonusExcesso: action.payload.bonusExcesso, bonusCombo: action.payload.bonusCombo,
 				 porcentagem: action.payload.porcentagem, penaNum: action.payload.penaNum,
 				 penaLetra: action.payload.penaLetra, corBase: action.payload.corBase,
-				 corBarra: action.payload.corBarra, senhaTeste: ''
+				 corBarra: action.payload.corBarra, senhaTeste: '', senhasTestadas: action.payload.testes,
+				  porcentagemMedia: action.payload.media
 
 
 
 
 				  }
+
+					  
 
 		case 'criptografar':
 			return{...state, criptografada: action.payload, senhaTeste: ''}
